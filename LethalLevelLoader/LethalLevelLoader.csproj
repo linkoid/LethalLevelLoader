@@ -58,6 +58,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
+    <PackageReference Include="Linkoid.LethalCompany.Plugin.Build" Version="1.*" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
