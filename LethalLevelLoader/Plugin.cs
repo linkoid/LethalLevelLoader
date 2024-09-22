@@ -76,6 +76,10 @@ namespace LethalLevelLoader
             AssetBundleLoader.onBundlesFinishedLoading += AssetBundleLoader.LoadContentInBundles;
 
             ConfigLoader.BindGeneralConfigs();
+
+#if DEBUG
+            Tests.LethalSmiteInjectionHelper.Create("LethalLevelLoader.Tests").Start();
+#endif
         }
 
         internal static void OnBeforeSetupInvoke()

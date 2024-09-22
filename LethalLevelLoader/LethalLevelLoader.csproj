@@ -111,5 +111,9 @@
       DestinationFile="$(ProjectDir)dist/curseforge.zip"
       Overwrite="true" />
   </Target>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <PackageReference Include="Linkoid.SmiteUnit.Injection" Version="0.3.*-*" PrivateAssets="all" />
+  </ItemGroup>
   
 </Project>
