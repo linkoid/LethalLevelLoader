@@ -113,6 +113,7 @@
   </Target>
 
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <InternalsVisibleTo Include="LethalLevelLoader.Tests" />
     <PackageReference Include="Linkoid.SmiteUnit.Injection" Version="0.3.*-*" PrivateAssets="all" />
   </ItemGroup>
   

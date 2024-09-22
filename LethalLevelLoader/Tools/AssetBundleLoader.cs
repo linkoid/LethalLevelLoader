@@ -148,7 +148,7 @@ namespace LethalLevelLoader
             onBundlesFinishedLoading?.Invoke();
         }
 
-        IEnumerator LoadBundle(string bundleFile, string fileName)
+        internal IEnumerator LoadBundle(string bundleFile, string fileName)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
