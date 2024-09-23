@@ -22,6 +22,12 @@
     <NetStandardRuntimeAssets Condition="$(IsNetStandard)">runtime</NetStandardRuntimeAssets>
     <CopyFilesToPluginOutputDirectoryOnBuild Condition="$(IsNetStandard) and '$(Configuration)' == 'Debug'">true</CopyFilesToPluginOutputDirectoryOnBuild>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Update="TestBundles\*.testbundle">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
   <!-- Configue Plugin References -->
   <ItemGroup>
